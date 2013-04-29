@@ -39,18 +39,29 @@ I'm good at system programming and backend service building. I can write applica
 
 **Brief Introduction**
 ===
-*From this year, I spent much more my spare time in the open source world for example: write patches for open source projects, reading the codes. I enjoy the feeling working with those talent programmers from the world. I will open source several useful projects this year!*
+*From this year, I spent much more my spare time in the open source world for example: write patches for open source projects, reading the codes. I enjoy the feeling working with those talent programmers from the whole world. I will open source several useful projects in this year!*
 
 **Companies Worked Before**
 ===
-1. RedHat *(Kernel FileSystem)*
-2. GanJi *(Information Retrieval System)*
-3. NSFOCUS *(IPS, Malformed Files Detecting, Website Trojan Horse Detecting)*
+1. RedHat
+
+   *Kernel FileSystem*
+   
+2. GanJi 
+
+   *Information Retrieval System*
+   
+3. NSFOCUS
+
+   *IPS, Malformed Files Detecting, Website Trojan Horse Detecting*
 
 **SNS Network**
 ===
+
 Sina Weibo: [http://weibo.com/1849280184](http://weibo.com/1849280184)
 
+**Contact**
+===
 *You can drop me any questions by sending emails to* **InsFocus** *(at) gmail.com, I'm glad to help others. :)*
 
 
