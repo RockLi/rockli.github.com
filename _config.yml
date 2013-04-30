@@ -9,7 +9,7 @@ pygments: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Share the knowledge with the world
+title : Sharing the knowledge with the whole world
 tagline: Site Tagline
 author :
   name : Rock Li
@@ -68,7 +68,7 @@ JB :
   # These paths are to the main pages Jekyll-Bootstrap ships with.
   # Some JB helpers refer to these paths; change them here if needed.
   #
-  archive_path: /archive.html
+  archive_path: /
   categories_path : /categories.html
   tags_path : /tags.html
   atom_path : /atom.xml
@@ -79,8 +79,7 @@ JB :
   # Set 'provider' to false to turn commenting off globally.
   #
   comments :
-    # provider : disqus
-    provider : false
+    provider : disqus
     disqus :
       short_name : rockli
    
@@ -91,7 +90,7 @@ JB :
   analytics :
     provider : google 
     google : 
-        tracking_id : 'UA-123-12'
+        tracking_id : 'UA-40542387-1'
     getclicky :
       site_id : 
     mixpanel :
@@ -103,7 +102,7 @@ JB :
   # Set 'provider' to false to turn sharing off globally.
   #
   sharing :
-    provider : false
+    provider : reddit
     
   # Settings for all other include helpers can be defined by creating 
   # a hash with key named for the given helper. ex:
