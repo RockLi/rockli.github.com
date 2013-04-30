@@ -49,7 +49,7 @@ I'm good at system programming and backend service building. I can write applica
    
 2. GanJi 
 
-   *Information Retrieval System*
+   *Information Retrieval System, Distributed storage system*
    
 3. NSFOCUS
 
@@ -59,6 +59,7 @@ I'm good at system programming and backend service building. I can write applica
 ===
 
 Sina Weibo: [http://weibo.com/1849280184](http://weibo.com/1849280184)
+
 
 **Contact**
 ===
