@@ -2,7 +2,7 @@
 layout: post
 title: "MongoDB C Driver Examples"
 description: ""
-category: 
+category:
 tags: []
 ---
 {% include JB/setup %}
@@ -31,13 +31,13 @@ The C implementation:
 
 <pre>
 bson object;  /* We define a bson object here. */
-bson_init(&object); /* We need to initialize every bson object */
-bson_finish(&object); /* When you are ready to use it, you need to explicitly call this api. */
+bson_init(&amp;object); /* We need to initialize each bson object */
+bson_finish(&amp;object); /* When you are ready to use it, you need to explicitly call this api. */
 </pre>
 
-So now we got a empty object, but there's an existing api to finish this job directlty. You can use `bson_init_empty(&object)`.
+So now we got a empty object, but there's an existing api to finish this job directlty. You can use `bson_init_empty(&amp;object)`.
 
-But notice, in the offical documents or other code examples they may use `bson_empty(&object)`.
+But notice, in the offical documents or other code examples they may use `bson_empty(&amp;object)`.
 
 `bson_empty` is the old api, so please keep update.
 
@@ -58,16 +58,16 @@ The C Implementation
 
 <pre>
 bson object;
-bson_init(&object);
-bson_append_string(&object, "name", "Rock");
-bson_append_int(&object, "age", 25);
-bson_append_double(&object, "salary", 1.11);
-bson_append_bool(&object, "cute", 1);
-bson_finish(&object);
-bson_print(&object);
+bson_init(&amp;object);
+bson_append_string(&amp;object, "name", "Rock");
+bson_append_int(&amp;object, "age", 25);
+bson_append_double(&amp;object, "salary", 1.11);
+bson_append_bool(&amp;object, "cute", 1);
+bson_finish(&amp;object);
+bson_print(&amp;object);
 </pre>
 
-This time we define a new bson object and init it. Then call `bson_append_*` apis to set our properties, by using which api depends on the value type. So here we have a string type, an integer type, an double type and the boolean type. Finally we call the `bson_print` api to dump the internal of the bson object passed in. 
+This time we define a new bson object and init it. Then call `bson_append_*` apis to set our properties, by using which api depends on the value type. So here we have a string type, an integer type, an double type and the boolean type. Finally we call the `bson_print` api to dump the internal of the bson object passed in.
 
 The output is similar to this:
 
@@ -103,22 +103,22 @@ The C implementation:
 
 <pre>
 bson object;
-bson_init(&object);
-bson_append_string(&object, "name", "Rock");
-bson_append_int(&object, "age", 25);
+bson_init(&amp;object);
+bson_append_string(&amp;object, "name", "Rock");
+bson_append_int(&amp;object, "age", 25);
 
-bson_append_start_array(&object, "hobbies");
-bson_append_string(&object, "0", "jogging");
-bson_append_string(&object, "1", "hiking");
-bson_append_finish_array(&object);
+bson_append_start_array(&amp;object, "hobbies");
+bson_append_string(&amp;object, "0", "jogging");
+bson_append_string(&amp;object, "1", "hiking");
+bson_append_finish_array(&amp;object);
 
-bson_append_start_object(&object, "favorite_apps");
-bson_append_string(&object, "ios", "angry bird");
-bson_append_string(&object, "android", "wechat");
-bson_append_finish_object(&object);
+bson_append_start_object(&amp;object, "favorite_apps");
+bson_append_string(&amp;object, "ios", "angry bird");
+bson_append_string(&amp;object, "android", "wechat");
+bson_append_finish_object(&amp;object);
 
-bson_finish(&object);
-bson_print(&object);
+bson_finish(&amp;object);
+bson_print(&amp;object);
 </pre>
 
 Very straitforward, in this example I only introduced the `bson_append_start_*` apis. You can use these apis when you want to set an array type of the subobject. Still remember I explained before the differences between array type and the object type? So when in the array type, you need to supply the keys such as 0, 1, 2 ...
@@ -130,11 +130,11 @@ Output:
 <pre>
 name : 2 	 Rock
 age : 16 	 25
-hobbies : 4 	 
+hobbies : 4
 	0 : 2 	 jogging
 	1 : 2 	 hiking
-    
-favorite_apps : 3 	 
+
+favorite_apps : 3
 	ios : 2 	 angry bird
 	android : 2 	 wechat
 </pre>
@@ -153,7 +153,7 @@ Each time we need to connect to MongoDB first.
 
 <pre>
 mongo conn;
-if (mongo_client(&conn, "127.0.0.1", 27017) != MONGO_OK) {
+if (mongo_client(&amp;conn, "127.0.0.1", 27017) != MONGO_OK) {
 	fprintf(stderr, "connect failed..., err:%d\n", conn.err);
 	exit(1);
 }
@@ -172,18 +172,18 @@ We can use this api to send queries to MongoDB.
 
 <pre>
 bson query;
-bson_init(&query);
-bson_append_string(&query, "name", "rock");
-bson_finish(&query);
+bson_init(&amp;query);
+bson_append_string(&amp;query, "name", "rock");
+bson_finish(&amp;query);
 
 bson fields;
-bson_init(&fields);
-bson_append_int(&fields, "age", 1);
-bson_append_int(&fields, "_id", 0);
-bson_finish(&fields);
+bson_init(&amp;fields);
+bson_append_int(&amp;fields, "age", 1);
+bson_append_int(&amp;fields, "_id", 0);
+bson_finish(&amp;fields);
 
-mongo_cursor *cursor = mongo_find(&conn, "test.example_collection", &query, &fields, 0, 0, 0);
-fprintf(stderr, "cursor:%p\n", cursor);    
+mongo_cursor *cursor = mongo_find(&amp;conn, "test.example_collection", &amp;query, &amp;fields, 0, 0, 0);
+fprintf(stderr, "cursor:%p\n", cursor);
 </pre>
 
 In this example, we first constructed our query conditions and later restricted which fields to return just like `db.example_collection.find({'name':'Rock'}, {'age':1, '_id':0})`. If you want to set `limit` and `skip` some results, you can modify the fifth and sixth parameters. If you don't want to restrict the fields to return, you can set the forth parameter to NULL.
@@ -191,11 +191,11 @@ In this example, we first constructed our query conditions and later restricted 
 If we want to gain the same goal like `db.example_collection.find({'age':{"$gte": 12}})`, we can define our query like this.
 <pre>
 bson query;
-bson_init(&query);
-bson_append_start_object(&query, "age");
-bson_append_int(&query, "$gte", 12);
-bson_append_finish_object(&query);
-bson_finish(&query);
+bson_init(&amp;query);
+bson_append_start_object(&amp;query, "age");
+bson_append_int(&amp;query, "$gte", 12);
+bson_append_finish_object(&amp;query);
+bson_finish(&amp;query);
 </pre>
 
 If there's no error occured, this api will return back a cursor object, this cursor object is allocated in the heap, so you need to remember to release it. I will explain the release methods in later sections.
@@ -215,21 +215,21 @@ while (mongo_cursor_next(cursor) == MONGO_OK) {
 
 So now we can play with the single document. We need a iterator to iterate the document. You should have familiar with the concept of iterators.
 
-`bson_iterator it;` like other objects, we need to initialize it first. `bson_iterator_init(&it, doc)`, you must supply this iterator aims to iterator which document.
+`bson_iterator it;` like other objects, we need to initialize it first. `bson_iterator_init(&amp;it, doc)`, you must supply this iterator aims to iterator which document.
 
 Now we can iterator all the keys, simple example:
 
 <pre>
 bson_iterator it;
-bson_iterator_init(&it, doc);
-while (bson_iterator_next(&it) != BSON_EOO) {
-    fprintf(stderr, "key:%s\n", bson_iterator_key(&it));
+bson_iterator_init(&amp;it, doc);
+while (bson_iterator_next(&amp;it) != BSON_EOO) {
+    fprintf(stderr, "key:%s\n", bson_iterator_key(&amp;it));
 }
 </pre>
 
-`bson_iterator_key` is used to return the key, remember all keys are string type, there's no interger key type. If you know the key like "name", you want to got that object directly, you can use `bson_find(&it, doc, "key")` api to index the key type for you, this api likes with `bson_iterator_next` return the value type. Sometimes you need to check the return value. But how to iterator the sub document? 
+`bson_iterator_key` is used to return the key, remember all keys are string type, there's no interger key type. If you know the key like "name", you want to got that object directly, you can use `bson_find(&amp;it, doc, "key")` api to index the key type for you, this api likes with `bson_iterator_next` return the value type. Sometimes you need to check the return value. But how to iterator the sub document?
 
-For the sub document, you need to define a new iterator called `bson_iterator sub_it;`, then call `bson_iterator_subiterator(&it, &sub_it);` to initialize the sub iterator. Please remember the hierarchy first is the parent iterator, seconds is the sub iterator especially when you iterate the deep nested documents. When you want to fetch the current value the iterator pointed to, you can use `bson_iterator_double/int...` to fetch the value.
+For the sub document, you need to define a new iterator called `bson_iterator sub_it;`, then call `bson_iterator_subiterator(&amp;it, &amp;sub_it);` to initialize the sub iterator. Please remember the hierarchy first is the parent iterator, seconds is the sub iterator especially when you iterate the deep nested documents. When you want to fetch the current value the iterator pointed to, you can use `bson_iterator_double/int...` to fetch the value.
 
 
 Release the resource
@@ -240,6 +240,3 @@ In the future, maybe I will write a post to explain the internal implementation 
 
 
 Any questions? Don't hesitate to send me emails.
-
-
-
