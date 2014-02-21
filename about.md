@@ -6,11 +6,11 @@ group: navigation
 ---
 {% include JB/setup %}
 
-**I'm a Hunter !** *Hoping everyone can use my robots in the future !*
+**I'm a C programmer who writes Golang, Python, Javascript everyday, a truely full stack engineer here.**
 
-I'm good at system programming and backend service building.Especially good at writing various programming languages and debugging kinds of bugs.
+Excellent at system design and writing backend services. I love writing systems from scratch.
 
-I can write applications from Front-End to Backend and can also hack the kernel and drivers.
+Strong debugging skills, anyone who can really understand this sentence? If you can, send me emails!
 
 **Name**
 ===
@@ -34,9 +34,9 @@ I can write applications from Front-End to Backend and can also hack the kernel 
 
 **Programming Languages**
 ===
-*I master C, Python, Objective-C, Ruby, PHP, Javascript, CSS, but still fresh to golang, Erlang and Lua.*
+*I master C, Python, Objective-C, Ruby, PHP, Javascript, CSS, Golang.*
 
-*C, Python, Javascript, Objective-C is my main coding languages currently. *
+*currently, I'm using C, Python, Javascript, Golang a lot.*
 
 *Capital C is my favorite. I hate C++, just like Windows, no reason.*
 
@@ -44,15 +44,17 @@ I can write applications from Front-End to Backend and can also hack the kernel 
 
 **Previous Companies**
 ===
-1. RedHat
+1. AppAnnie
+
+2. RedHat
 
    *Kernel FileSystem*
-   
-2. GanJi 
+
+3. GanJi
 
    *Information Retrieval System, Distributed storage system*
-   
-3. NSFOCUS
+
+4. NSFOCUS
 
    *IPS, Malformed Files Detecting, Website Trojan Horse Detecting*
 
@@ -66,6 +68,3 @@ Sina Weibo: [http://weibo.com/1849280184](http://weibo.com/1849280184)
 **Contact**
 ===
 *You can drop me any questions by sending emails to* **InsFocus** *(at) gmail.com, I'm glad to help others. :)*
-
-
-
