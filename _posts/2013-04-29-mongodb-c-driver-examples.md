@@ -17,7 +17,6 @@ We already know MongoDB use the bson format for its internal storage, so I begin
 
 BTW: The reason I decide to use MongoDB C driver to write clients, first is one of my client will be written in pure C, and another thing is I compared with Python Driver with the C driver, in my scenario, by using C is 1 times faster than Python at least.
 
-
 BSON
 ===
 
