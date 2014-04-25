@@ -74,9 +74,9 @@ group: navigation
 
 ##SNS Network
 
-* [GitHub](https://github.com/RockLi](https://github.com/RockLi)
+* [GitHub](https://github.com/RockLi)
 
-* [Sina Weibo](http://weibo.com/1849280184](http://weibo.com/1849280184)
+* [Sina Weibo](http://weibo.com/1849280184)
 
 ##Contact
 
