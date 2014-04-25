@@ -14,7 +14,7 @@ Last Friday, I met a Python Bug, so this weekend I spent some time to investigat
 
 I extracted the minimize POC here:
 
-<pre>
+```
 #!/usr/bin/env python
 import thread
 import time
@@ -28,7 +28,7 @@ for _ in xrange(10):
     thread.start_new_thread(thread_fn, ())
 
 time.sleep(1)
-</pre>
+```
 
 Upper codes sometimes will throw out the exception: ```AttributeError: _strptime_time```, you can run it in your environment and check the output. 
 
