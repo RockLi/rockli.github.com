@@ -80,4 +80,4 @@ group: navigation
 
 ##Contact
 
-You can drop me any questions by sending emails to* **insfocus** *(at) gmail.com, I'm glad to help others. :)
+You can drop me any questions by sending emails to **insfocus** (at) gmail.com, I'm glad to help others. :)
