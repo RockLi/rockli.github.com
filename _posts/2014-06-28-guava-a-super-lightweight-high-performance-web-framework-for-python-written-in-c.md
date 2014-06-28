@@ -57,6 +57,11 @@ So inside Guava, I only supply these components:
      	| /static/1.jpg | my_static_directory/1.jpg
 
 
+     StaticRouter has one special parameter ```allow_index```, the default value is False.
+
+     If this value is set to True, you can visit: xxx/static to list all files and sub directories in your current directory, just like ```python -m SimpleHTTPServer``` does.
+
+
    * RESTRouter
      
      Especially if you want to supply the RESTFul service, you should choose this one. 
@@ -153,7 +158,7 @@ So inside Guava, I only supply these components:
             
 				return None
 
-	If all of above routers still can not match your requirements, please send your feature request directly on the Github issues or to my email: __<insfocus BIGAT gmail.com>__
+	If all of above routers still can not match your requirements, please send your feature request directly on the Github issues or to my email: __insfocus BIGAT gmail.com__
 
 
 3. Session
