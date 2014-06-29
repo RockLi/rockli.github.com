@@ -13,10 +13,10 @@ These days I'm on my vocation, so I decided to do something really special.
 
 Finally I decided to write and release one open source project in the Python field.
 
-Afterwards I got the idea to write a new web framework for Python but **not in the tradional** ways. There're
+Afterwards I got the idea to write a new web framework for Python but **not in the traditional** ways. There're
 lots of web frameworks for Python in the world.
 
-Maybe you guys will ask "Why you want to reinvent the wheel again?". The answer is very simple, "I'm not reinventing", I'm trying to bring some new ideas when you decided to write your new web framework.
+Maybe you guys will ask "Why you want to reinvent the wheel again?". The answer is very simple, "I'm not reinventing", I'm trying to bring some new ideas for writing new web frameworks.
 
 I used to write a web framework in PHP about seven years ago while I'm still a student, and I understand the underlying implementation of some key components like session, router... in PHP for example.
 
@@ -28,7 +28,7 @@ So I started the [Guava project](https://github.com/flatpeach/guava). All of my 
 
 From my perspective, one web framework should only do what it should do.
 
-For example, users can choose SQLAlchemy as the ORM, Jinjia2 as the template engine... all of these components should be chosen based users and not forced by the framework designer.
+For example, users can choose SQLAlchemy as the ORM, Jinjia2 as the template engine... all of these components should be chosen by users nor forced by the framework designer.
 
 So inside Guava, I only supply these components:
 
@@ -59,12 +59,12 @@ So inside Guava, I only supply these components:
 
      StaticRouter has one special parameter ```allow_index```, the default value is False.
 
-     If this value is set to True, you can visit: xxx/static to list all files and sub directories in your current directory, just like ```python -m SimpleHTTPServer``` does.
+     If this value is set to True, you can visit: xxx/static to list all files and sub directories in your current directory, just like ```python -m SimpleHTTPServer``` does, not including the performace part. I used some internal apis of libuv to optimize the performance.
 
 
    * RESTRouter
 
-     Especially if you want to supply the RESTFul service, you should choose this one.
+     Especially useful when you wanna supply RESTFul api.
 
      	| METHOD |  URL      |      Class      | Method
      	| GET    | /users    | UsersController | GET
@@ -136,9 +136,9 @@ So inside Guava, I only supply these components:
 
 	Simple enough, right?
 
-	By the way, you can customize whether to enable the session mechanism for one router. If you want, you can use different session for different sub application.
+	By the way, you can customize whether to enable the session mechanism for one router. If you want, you can use different session for different mount point.
 
-	If you want to build complex routing rules or register the router manually, you can use the CustomRouter like this:
+	If you want to build complex routing rules or register the router manually, you can do like this:
 
 		router = guava.router.Router({
 			'/about': guava.handler.Handler(...)
@@ -158,7 +158,7 @@ So inside Guava, I only supply these components:
 
 				return None
 
-	If all of above routers still can not match your requirements, please send your feature request directly on the Github issues or to my email: __insfocus BIGAT gmail.com__
+	If all of above routers still can not match your requirements, please send your feature request directly on the Github issues or to my email: __insfocus BIGAT gmail.com__. I'm glad to implement it in Guava if it's appropriate.
 
 
 3. Session
@@ -252,13 +252,27 @@ You can configure web servers to proxy all requests to backend Guava server.
 	Nginx <-----------> Guava WebServer
 
 
+Sample configuration for Nginx
+
+	server {
+		listen 80;
+		server_name mydomain;
+		location / {
+			proxy_pass http://localhost:8080;
+			proxy_redirect off;
+			proxy_set_header Host mydomain;
+			proxy_set_header X-Real-IP $remote_addr;
+			proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+		}
+	}
+
 
 
 ## Use the Guava WebServer as your web server
 
 The performance of the Guava WebServer is good enough for replacing Nginx if your application is not so complex.
 
-But for now, it's not appropriate to choose this kind of deployment, because I haven't spend so much more time for security part, after basic features of Guava are frozed and stable, I will spend more and more time for optimizing the builtin web server to make it more sophisticated, more powerful.
+But for now, it's not appropriate to choose this kind of deployment, because I haven't spend so much time on the security part. After the basic features of Guava are frozed and stable, I will spend more and more time for optimizing the builtin web server to make it more sophisticated, more powerful.
 
 
 # For the Future
@@ -274,7 +288,7 @@ For long-term consideration, I will do following items, probably I will modify t
 
 * More unittests for covering the basic features of Guava
 
-* Write more fundation data strutures to remove PyObject from the core guava codes, so other guys can easily port the guava framework to other languages like Ruby, PHP, Lua...
+* Write more fundation data strutures to remove PyObject related data structures from the core guava codes, so other guys can easily port the guava framework to other languages like Ruby, PHP, Lua... and the core guava codes can become a standalone project.
 
 * Features requested from you guys!
 
@@ -285,7 +299,7 @@ For those guys who wanna contribute to the guava project, I accept all kinds of 
 
 1. Contribute to the code codes
 
-2. Write tests
+2. Write testcases
 
 3. Write the documentation
 
@@ -298,6 +312,10 @@ For those guys who wanna contribute to the guava project, I accept all kinds of 
 7. Describe feature request and send it to me
 
 8. Write sample codes or sample applications
+
+9. Invite developers to evaluate the guava framework
+
+10. More and more...
 
 
 # Wrap Up
