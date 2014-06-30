@@ -215,7 +215,7 @@ So inside Guava, I only supply these components:
 
 ## Super high performance while compared to Flask, web.py...
 
-As you already know, the performace of tonado is very good, but I'm wondering whether my web framework can exceed it.
+As you already know, the performace of tornado is very good, but I'm wondering whether my web framework can exceed it.
 
 I chosed C to write the web framework and port to Python as the c extension. If I choose Python to finish the web framework, I'm reinventing the wheel. :)
 
@@ -228,13 +228,31 @@ I choose this kind of combination because I can get the best performance.
 
 # Performance Testing
 
-I did a rough performance testing and compared guava with cherrypy, Flask, web.py, tonado.
+I did a rough performance testing and compared guava with cherrypy, Flask, web.py, tornado.
 
 Maybe the result is not very accurate. Anyways I used the default helloworld for each web framework.
 
 If you guys have more thoughts on this topic, no matter I wrote the bad codes for one specific framework or not did the correct testing, please kindly correct me.
 
 
+Hardware: My virtual marchine, Ubuntu12.04 2GB Memory 2 cores
+
+Using the ab command for testing with concurrency 50
+
+Command: ```ab -n 40000 -c 50 http://localhost:8000/```
+
+Result:
+
+	| Framework | Result          |
+	| Flask     | 1236.89 [#/sec] |
+	| CherryPy  | 532.39 [#/sec]  |
+	| Tornado   | 2326.46 [#/sec] |
+	| Guava     | 5397.37 [#/sec] |
+
+
+Please keep in mind, the above performance testing result was got from my roughly testing.
+
+In the future, after I finished the stable version of guava, I will do detailed performance testing which will include the transformation of CPU, memory usage and other KPIS.
 
 
 # Deployment

@@ -34,8 +34,8 @@ group: navigation
 * Graduated from **WuHan University of Technolody** at 2009 and got a chemistry related degree there
 
 * Minored the computer science in **WuHan University**
-  
-  I **didn't** get the degree here, 'cause I didn't attend the exams and don't want to LOL... 
+
+  I **didn't** get the degree here, 'cause I didn't attend the exams and don't want to LOL...
 
   Instead I worked fulltime inside one software company and led a small team after my sophomore.
 
@@ -54,7 +54,7 @@ group: navigation
   C, Python, Go, PHP, NodeJS
 
 * Proficient
-  
+
   CSS, Javascript(Node.JS), [HTML]
 
 * Can write
@@ -64,7 +64,7 @@ group: navigation
 
 ##Projects
 
-You can go to [my github page](https://github.com/RockLi) to see which open source projects I'm contibuting to and which projects are released by me. 
+You can go to [my github page](https://github.com/RockLi) to see which open source projects I'm contibuting to and which projects are released by me.
 
 For short, till now, I contributed to: Redis, PhantomJS, CasperJS, MongoDB C Driver, MongoDB Python Driver.
 
@@ -76,7 +76,7 @@ I released these open source projects:
 
 * starfruit - A modern implementation of IRC server written in Go
 
-In the future, I will spend more time in the open source field and will try my best to deliver best open source projects.  
+In the future, I will spend more time in the open source field and will try my best to deliver best open source projects.
 
 ##Experiences(After I graduated from university formally)
 
@@ -93,15 +93,15 @@ In the future, I will spend more time in the open source field and will try my b
 
    * Distributed storage system
 
-   
+
    I wrote a distributed storage system from scratch alone there which inspired heavily by Haystack in Facebook.
-   
+
    It serves as the underlying storage system for the search engine. More than 400M requests per day.
 
    I also build a Google Analytics like system there to count the PV, UV and other KPIS.
 
-   Other time is working on the IR system part. 
-   
+   Other time is working on the IR system part.
+
 
 4. **[NSFOCUS](http://www.nsfocus.com)** (Unix C/C++ Engineer) _2009.06 ~ 2010.09_
 
@@ -113,14 +113,14 @@ In the future, I will spend more time in the open source field and will try my b
 
 
    Wrote the malformed files detecting engine from scratch and embedded it to the IPS.
-   
+
    After that I modified the webkit engine to write a trojan horse detecting engine, features include: HeapSpray, ActiveXObject simulating and vulnerabilities detecting....
 
    By the way, I modified the webkit to headless(similiar to PhantomJS, but totally different).
 
-   Other time is working on the IPS itself like writing the protocol decoders: SSL..., investigating 
+   Other time is working on the IPS itself like writing the protocol decoders: SSL..., investigating
    security vulnerabilities...
-   
+
 
 ##SNS Network(Welcome to follow me)
 
