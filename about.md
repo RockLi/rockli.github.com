@@ -7,7 +7,6 @@ group: navigation
 {% include JB/setup %}
 
 
-
 ##Name
 
 **Rock Lee** _(李新军)_
@@ -70,9 +69,9 @@ For short, till now, I contributed to: Redis, PhantomJS, CasperJS, MongoDB C Dri
 
 I released these open source projects:
 
-* guava - A super super lightweight high performance web framework for Python written in C
+* [guava](https://github.com/flatpeach/guava) - A super super lightweight high performance web framework for Python written in C
 
-* coconut - A foundation library fully written in Go which includes frequent used data structures and algorithms
+* [coconut](https://github.com/flatpeach/coconut) - A foundation library fully written in Go which includes frequent used data structures and algorithms
 
 * starfruit - A modern implementation of IRC server written in Go
 
@@ -128,6 +127,7 @@ In the future, I will spend more time in the open source field and will try my b
 
 * [Sina Weibo](http://weibo.com/1849280184)
 
+* [Twitter](https://twitter.com/RockLee_1987)
 
 ##Contact Information
 
