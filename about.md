@@ -79,7 +79,9 @@ In the future, I will spend more time in the open source field and will try my b
 
 ##Experiences(After I graduated from university formally)
 
-1. **[AppAnnie](http://www.appannie.com)** (Senior Software Engineer) _2013.02 ~ Now_
+1. **[AppAnnie](http://www.appannie.com)** (Staff Software Engineer) _2013.02 ~ Now_
+
+   Wanna join AppAnnie? Please send your CV to me and your expected position. 
 
 2. **[RedHat](http://www.redhat.com)** (Software Engineer) _2012.09 ~ 2013.01_
 
