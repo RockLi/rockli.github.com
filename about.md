@@ -73,54 +73,39 @@ I released these open source projects:
 
 * [coconut](https://github.com/flatpeach/coconut) - A foundation library fully written in Go which includes frequent used data structures and algorithms
 
-* starfruit - A modern implementation of IRC server written in Go
+* [ircd](https://github.com/flatpeach/ircd) - A modern implementation of IRC server written in Go
 
 In the future, I will spend more time in the open source field and will try my best to deliver best open source projects.
 
 ##Experiences(After I graduated from university formally)
 
-1. **[AppAnnie](http://www.appannie.com)** (Staff Software Engineer) _2013.02 ~ Now_
+**[AppAnnie](http://www.appannie.com)** (Staff Software Engineer) _2013.02 ~ Now_
 
-   Wanna join AppAnnie? Please send your CV to me and your expected position. 
+Wanna join AppAnnie? Please send your CV and expected position to me.
 
-2. **[RedHat](http://www.redhat.com)** (Software Engineer) _2012.09 ~ 2013.01_
+**[RedHat](http://www.redhat.com)** (Software Engineer) _2012.09 ~ 2013.01_
 
    * Kernel FileSystem
 
-
-3. **[GanJi](http://www.ganji.com)** (Software Engineer) _2010.09 ~ 2012.09_
+**[GanJi](http://www.ganji.com)** (Software Engineer) _2010.09 ~ 2012.09_
 
    * Information Retrieval System(Search Engine)
-
    * Distributed storage system
 
-
-   I wrote a distributed storage system from scratch alone there which inspired heavily by Haystack in Facebook.
-
-   It serves as the underlying storage system for the search engine. More than 400M requests per day.
-
-   I also build a Google Analytics like system there to count the PV, UV and other KPIS.
-
-   Other time is working on the IR system part.
+  I wrote a distributed storage system from scratch alone there which inspired heavily by Haystack in Facebook. It serves as the underlying storage system for the search engine. More than 400M requests per day. I also build a Google Analytics like system there to count the PV, UV and other KPIS. Other time is working on the IR system part.
 
 
-4. **[NSFOCUS](http://www.nsfocus.com)** (Unix C/C++ Engineer) _2009.06 ~ 2010.09_
+**[NSFOCUS](http://www.nsfocus.com)** (Unix C/C++ Engineer) _2009.06 ~ 2010.09_
 
    * IPS
-
    * Malformed Files Detecting
-
    * Website Trojan Horse Detecting
 
+Wrote the malformed files detecting engine from scratch and embedded it to the IPS.
+After that I modified the webkit engine to write a trojan horse detecting engine, features include: HeapSpray, ActiveXObject simulating and vulnerabilities detecting....
+By the way, I modified the webkit to headless(similiar to PhantomJS, but totally different).
 
-   Wrote the malformed files detecting engine from scratch and embedded it to the IPS.
-
-   After that I modified the webkit engine to write a trojan horse detecting engine, features include: HeapSpray, ActiveXObject simulating and vulnerabilities detecting....
-
-   By the way, I modified the webkit to headless(similiar to PhantomJS, but totally different).
-
-   Other time is working on the IPS itself like writing the protocol decoders: SSL..., investigating
-   security vulnerabilities...
+Other time is working on the IPS itself like writing the protocol decoders: SSL..., investigating security vulnerabilities...
 
 
 ##SNS Network(Welcome to follow me)
