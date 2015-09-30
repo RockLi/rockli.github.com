@@ -79,7 +79,7 @@ In the future, I will spend more time in the open source field and will try my b
 
 ##Experiences(After I graduated from university formally)
 
-**[AppAnnie](http://www.appannie.com)** (Senior Architect) _2013.02 ~ Now_
+**[AppAnnie](http://www.appannie.com)** (Senior Architect - Leading the Infrastructure Team) _2013.02 ~ Now_
 
 Wanna join AppAnnie? Please send your CV and expected position to me.
 
