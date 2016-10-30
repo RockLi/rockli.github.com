@@ -9,15 +9,19 @@ group: navigation
 
 ##Name
 
-**Rock Lee** _(李新军)_
+**Rock Lee**
 
 ##Location
 *Beijing, China*
 
+##Introduction
 
-##Background
+Now I'm an entrepreneur running several companies.
 
-* Original as a C programmer, now I write Go, Python, NodeJS a lot
+
+##Tech Background
+
+* Original as a C programmer, then write Go, Python, NodeJS a lot
 
 * Can finish the work no matters it's inside Linux Kernel, webpages or mobile apps
 
@@ -34,14 +38,9 @@ group: navigation
 
 * Minored the computer science in **WuHan University**
 
-  I **didn't** get the degree here, 'cause I didn't attend the exams and don't want to LOL...
-
-  Instead I worked fulltime inside one software company and led a small team after my sophomore.
-
-
 ##Lauguages
 
-* English(working language)
+* English
 
 * Chinese(native)
 
@@ -79,9 +78,23 @@ In the future, I will spend more time in the open source field and will try my b
 
 ##Experiences(After I graduated from university formally)
 
-**[AppAnnie](http://www.appannie.com)** (Senior Architect - Leading the Infrastructure Team) _2013.02 ~ Now_
+**[Attackt](http://www.attackt.com)** (Co-founder & CTO) _2016.03 ~ Now_
 
-Wanna join AppAnnie? Please send your CV and expected position to me.
+An outsourcing company to help Startups or other companies speed up the developement of their products with highest quality.
+
+
+**[LinearPlus]** (Co-founder) _2016.07 ~ Now_
+
+We are building the product specially designed for the entertainment field.
+
+**[AppAnnie](http://www.appannie.com)** (Senior Architect - Leading the Infrastructure Team) _2013.02 ~ 2016.02_
+
+As an Senior Architecture leading the Infrastructure team to devliver best architecture, infrastructure systems for the whole company.
+
+   * Scraping
+   * Big Data
+   * OLAP
+   * More to discover
 
 **[RedHat](http://www.redhat.com)** (Software Engineer) _2012.09 ~ 2013.01_
 
